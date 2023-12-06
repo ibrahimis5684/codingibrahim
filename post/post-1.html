@@ -122,22 +122,20 @@
                 </div>
                 <div class="code-box">
                     <pre id="codeContent">
-&lt;*{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}&gt;
-
-&lt;body{
+}
+body{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #282539;
-}&gt;
-
-&lt;.box{
+}
+.box{
     position: relative;
     width: 300px;
     height: 300px;
@@ -148,30 +146,25 @@
     background: #060c21;
     transition: .5s;
     cursor: pointer;
-}&gt;
-
-&lt;.box:hover{
+}
+.box:hover{
     height: 400px;
-}&gt;
-
-&lt;.box .imgBx{
+}
+.box .imgBx{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-}&gt;
-
-&lt;.box .imgBx img{
+}
+.box .imgBx img{
     width: 300px;
     opacity: 0.1;
     transition: 0.5s;
-}&gt;
-
-&lt;.box:hover .imgBx img{opacity: 1;}&gt;
-
-&lt;.box:before{
+}
+.box:hover .imgBx img{opacity: 1;}
+.box:before{
     content: '';
     position: absolute;
     top: -2px;
@@ -180,9 +173,8 @@
     bottom: -2px;
     background: #ffffff;
     z-index: -1;
-}&gt;
-
-&lt;.box:after{
+}
+.box:after{
     content: '';
     position: absolute;
     top: -2px;
@@ -192,24 +184,20 @@
     background: #ffffff;
     z-index: -2;
     filter: blur(40px);
-}&gt;
-
-&lt;.box:before,
+}
+.box:before,
 .box:after{
     background: linear-gradient(225deg, #89ff00,#010615,#00bcd4);
-}&gt;
-
-&lt;.box:nth-child(2):before,
+}
+.box:nth-child(2):before,
 .box:nth-child(2):after{
     background: linear-gradient(225deg, #ff005e,#010615,#fbff00);
-}&gt;
-
-&lt;.box:nth-child(3):before,
+}
+.box:nth-child(3):before,
 .box:nth-child(3):after{
     background: linear-gradient(225deg, #dd6300,#010615,#2196f3);
-}&gt;
-
-&lt;.box .content{
+}
+.box .content{
     position: absolute;
     bottom: 10px;
     top: 300px;
@@ -223,26 +211,23 @@
     text-align: center;
     opacity: 0;
     transition: .2s;
-}&gt;
-
-&lt;.box:hover .content{
+}
+.box:hover .content{
     opacity: 1;
-}&gt;
-
-&lt;.box .content h2{
+}
+.box .content h2{
     font-size: 20px;
     color: #fff;
     font-weight: 500;
     line-height: 20px;
     letter-spacing: 1px;
-}&gt;
-
-&lt;.box .content h2 span{
+}
+.box .content h2 span{
     font-size: 14px;
     color: #fff;
     font-weight: 200;
     letter-spacing: 2px;
-}&gt;
+}
                     </pre>
                 </div>
             </div>
