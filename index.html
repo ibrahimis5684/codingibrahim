@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Conpatible" content="IE-edge">
+    <title>Codig Ibrahim</title>
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--resources file-->
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsiv.css">
+</head>
+<body>
+    <nav>
+        <!-- top-nav-bar -->
+        <div class="top-nav-bar">
+            <div class="top-nav-box1">
+                <div class="menu-icon-box">
+                    <button><i class="menu-icon fa-solid fa-bars"></i></button>
+                </div>
+                <div class="logo-box">
+                    <img class="logo" src="resources/img/my-logo.png" alt="coding.ibrahim">
+                </div>
+                <div class="search-box" id="search-container">
+                    <form>
+                        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="search-input" placeholder="try 'adventure'" onkeyup="filterPosts()">
+                    </form>
+                </div>
+            </div>
+            <div class="top-nav-box2">
+                <div class="toggle-switch" id="darkModeToggle">
+                    <span class="switch"></span>
+                </div>
+            </div>
+        </div>
+        <!-- side-nav-bar -->
+        <div class="side-nav-bar">
+            <ul>
+                <li><a href="#home"><i class="side-menu-icon fa-solid fa-house"></i><span id="hide-span">home</span></a></li>
+                <li class="nav-link"><a href="#"><i class="side-menu-icon fa-solid fa-file-code"></i><span id="hide-span">sub menu <i class="more-icon fa-solid fa-angle-up fa-rotate-90"></i></span></a>
+                    <div class="category-menu" id="category-list">
+                        <ul id="category-menu-list">
+                            <li><a onclick="changeColor(this)" style="background: #F4F2F1; color: #1976D2;">All</a></li>
+                            <li><a onclick="changeColor(this)">html</a></li>
+                            <li><a onclick="changeColor(this)">Css</a></li>
+                            <li><a onclick="changeColor(this)">Javascript</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <div class="line"></div>
+                <li><a href="https://ibrahimis5684.github.io/Portfolio/"><i class="side-menu-icon fa-solid fa-user"></i><span id="hide-span">about</span></a></li>
+                <li><a href="https://ibrahimis5684.github.io/Portfolio/#contact"><i class="side-menu-icon fa-solid fa-envelope"></i><span id="hide-span">contact</span></a></li>
+                <div class="line"></div>
+                <li><a href="#"><i class="side-menu-icon fa-solid fa-hand-holding-heart"></i><span id="hide-span">donate</span></a></li>
+                <div class="line"></div>
+                <li><a href="#"><span id="hide-span">more..</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- section -->
+    <section id="home">
+        <div class="row">
+            <div class="category-menu-section">
+                <ul id="category-menu-list">
+                    <li><a onclick="changeColor(this)" style="background: #F4F2F1; color: #1976D2;">All</a></li>
+                    <li><a onclick="changeColor(this)">html</a></li>
+                    <li><a onclick="changeColor(this)">Css</a></li>
+                    <li><a onclick="changeColor(this)">Javascript</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="main-survices-box">
+
+                <!-- post-1 -->
+                <div class="projects-box box">
+                    <div class="thumbneal">
+                        <a href="post/post-1.html"><img src="resources/img/hobereffects.png" alt=""></a>
+                    </div>
+                    <span id="category">html / css</span>
+                    <a href="post/post-1.html"><h2>Beautiful hover effects..</h2></a>
+                    <div class="like-box">
+                        <div class="profile-box">
+                            <a href="https://www.facebook.com/ibrahim094is">
+                                <div class="profile-img">
+                                    <img src="resources/img/my-logo.png" alt="coding ibrahim">
+                                </div>
+                                <h3>ibrahim</h3>
+                            </a>
+                        </div>
+                        <div class="follow-box">
+                            <a href="https://www.facebook.com/ibrahim094is">follow</a>
+                            <a href="post/post-1.html">Copy the code</a>
+                        </div>
+                    </div>
+                    <div class="project-futter">
+                        <div class="published-date-box"></div>
+                        <a href="post/post-1.html">read more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- about-section -->
+        <footer class="about-section">
+            <div class="row">
+                <div class="about-box">
+                    <h2 class="hero-text">about me</h2>
+                    <div class="about-me">
+                        <div class="img-box">
+                            <img src="resources/img/my-logo.png" alt="coding ibrahim">
+                        </div>
+                        <div class="description-box">
+                            <h2>ibrahim</h2>
+                            <p class="little-text">Learn || Share || support</p>
+                        </div>
+                    </div>
+                    <div class="social-media-box">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/ibrahim094is"><i class="social-media-icon fa-brands fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/ibrahim094is/"><i class="social-media-icon fa-brands fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://youtube.com/@Ibrahim_gd?si=XQezPgv5mYMYnYa0"><i class="social-media-icon fa-brands fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://ibrahimis5684.github.io/Portfolio/"><i class="social-media-icon fa-solid fa-window-maximize"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p class="little-text">&copy; 2023.<a href="https://ibrahimis5684.github.io/Portfolio/">ibrahim&#10004;</a>.All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--ja script-->
+    <script src="resources/js/script.js"></script>
+    <script src="vendors/js/html5shiv-printshiv.min.js"></script>
+    <script src="vendors/js/respond.min.js"></script>
+</body>
+</html>
