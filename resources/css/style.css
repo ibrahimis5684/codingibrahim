@@ -510,6 +510,13 @@ section .main-survices-box {
     margin-top: 1rem;
 }
 
+.projects-box .project-futter .published-date-box span {
+    font-size: 1.3rem;
+    color: var(--text-color);
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
 .projects-box .project-futter .published-date-box::before {
     content: 'published';
     font-size: 1.2rem;
@@ -522,15 +529,7 @@ section .main-survices-box {
     -ms-border-radius: .2rem;
     -o-border-radius: .2rem;
     text-transform: capitalize;
-}
-
-.projects-box .project-futter .published-date-box::after {
-    content: 'Dis 5, 2023';
-    font-size: 1.3rem;
-    color: var(--text-color);
-    font-weight: 600;
-    text-transform: capitalize;
-    margin-left: .5rem;
+    margin-right: .5rem;
 }
 
 .project-futter a {
