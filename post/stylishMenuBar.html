@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Conpatible" content="IE-edge">
+    <title>Beautiful hover effects</title>
+    <link rel="shortcut icon" href="../resources/img/title-logo.png" type="image/x-icon">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--resources file-->
+    <link rel="stylesheet" href="../resources/css/style.css">
+</head>
+<body>
+    <nav>
+        <!-- top-nav-bar -->
+        <div class="top-nav-bar">
+            <div class="top-nav-box1">
+                <div class="menu-icon-box">
+                    <button><i class="menu-icon fa-solid fa-bars"></i></button>
+                </div>
+                <div class="logo-box">
+                    <img class="logo" src="../resources/img/my-logo.png" alt="coding.ibrahim">
+                </div>
+                <div class="search-box" id="search-container">
+                    <form>
+                        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+                        <input type="search" id="search-input" placeholder="try 'adventure'" onkeyup="filterPosts()">
+                    </form>
+                </div>
+            </div>
+            <div class="top-nav-box2">
+                <div class="toggle-switch" id="darkModeToggle">
+                    <span class="switch"></span>
+                </div>
+            </div>
+        </div>
+        <!-- side-nav-bar -->
+        <div class="side-nav-bar">
+            <ul>
+                <li><a href="../index.html#home"><i class="side-menu-icon fa-solid fa-house"></i><span id="hide-span">home</span></a></li>
+                <div class="line"></div>
+                <li><a href="https://ibrahimis5684.github.io/Portfolio/"><i class="side-menu-icon fa-solid fa-user"></i><span id="hide-span">about</span></a></li>
+                <li><a href="https://ibrahimis5684.github.io/Portfolio/#contact"><i class="side-menu-icon fa-solid fa-envelope"></i><span id="hide-span">contact</span></a></li>
+                <div class="line"></div>
+                <li><a href="#"><i class="side-menu-icon fa-solid fa-hand-holding-heart"></i><span id="hide-span">donate</span></a></li>
+                <div class="line"></div>
+                <li><a href="#"><span id="hide-span">more..</span></a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- section -->
+    <section id="home">
+        <div class="row">
+            <h1>make a beautiful image menu bar using a html and css..</h1>
+            <p style="margin-top: 2rem; line-height: 1.5;" class="little-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis nam repellendus unde nemo. Ratione maxime vero reprehenderit, dignissimos quasi cumque nihil architecto tempora saepe sequi expedita optio error atque molestias odio temporibus voluptate aliquam voluptatem iste voluptates beatae quo. Ratione repellat dolores voluptas exercitationem dignissimos commodi obcaecati quas nihil. Laudantium, hic aspernatur ut incidunt cumque perspiciatis, doloremque placeat, eaque odio molestiae eum iusto tempora corrupti! Consequatur nulla dolore perferendis in autem tempore eum nam? Eos repellendus vel maiores nulla, quidem beatae minima officia perferendis pariatur placeat, laborum omnis iure! Quod deleniti omnis in velit debitis, quae nisi rem natus aspernatur?</p>
+            <h2 style="margin-top: 2rem;">source code</h2>
+        </div>
+        <div class="row">
+            <div class="source-code-box">
+                <div class="code-box-nav">
+                    <h3>HTML</h3>
+                    <button onclick="htmlCopyCode()">copy</button>
+                </div>
+                <div class="code-box">
+                    <pre id="htmlCode">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Stylish menu bar&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;nav class="menu"&gt;
+        &lt;input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" /&gt;
+        &lt;label class="menu-open-button" for="menu-open"&gt;
+         &lt;span class="lines line-1"&gt;&lt;/span&gt;
+         &lt;span class="lines line-2"&gt;&lt;/span&gt;
+         &lt;span class="lines line-3"&gt;&lt;/span&gt;
+       &lt;/label&gt;
+     
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend1 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend2 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend3 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend4 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend5 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+        &lt;a href="#" class="menu-item"&gt;&lt;div class="friend6 friends"&gt;&lt;!--image--&gt;&lt;/div&gt;&lt;/a&gt;
+     &lt;/nav&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+
+                    </pre>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="source-code-box">
+                <div class="code-box-nav">
+                    <h3>CSS</h3>
+                    <button onclick="cssCopyCode()">copy</button>
+                </div>
+                <div style="height: 100vh;" class="code-box">
+                    <pre id="cssCode">
+body {
+   padding: 0;
+   margin: 0;
+   background: #596778;
+   color: #EEEEEE;
+   text-align: center;
+   font-family: "Lato", sans-serif;
+}
+
+.menu-item,
+.menu-open-button {
+   background: #EEEEEE;
+   border-radius: 100%;
+   width: 80px;
+   height: 80px;
+   margin-left: -40px;
+   position: absolute;
+   color: #FFFFFF;
+   text-align: center;
+   line-height: 80px;
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+   -webkit-transition: -webkit-transform ease-out 200ms;
+   transition: -webkit-transform ease-out 200ms;
+   transition: transform ease-out 200ms;
+   transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-item .friends {
+    position: relative;
+}
+
+.menu-item :where(.friend1, .friend2, .friend3, .friend4, .friend5, .friend6)::after{
+    content: 'name';
+    font-size: 16px;
+    color: #dfdfdf;
+    background: #333;
+    line-height: normal;
+    font-weight: 500;
+    padding: 3px 8px;
+    border-radius: 3px;
+    position: absolute;
+    left: 10px;
+    top: -30px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transform: scale(0);
+    -webkit-transform: scale(0);
+    -moz-transform: scale(0);
+    -ms-transform: scale(0);
+    -o-transform: scale(0);
+    transition: all ease-in .3s;
+    -webkit-transition: all ease-in .3s;
+    -moz-transition: all ease-in .3s;
+    -ms-transition: all ease-in .3s;
+    -o-transition: all ease-in .3s;
+}
+
+.menu-item :where(.friend1, .friend2, .friend3, .friend4, .friend5, .friend6):hover::after {
+   transform: scale(1);
+   -webkit-transform: scale(1);
+   -moz-transform: scale(1);
+   -ms-transform: scale(1);
+   -o-transform: scale(1);
+}
+
+.menu-item :where(.friend3, .friend4, .friend5)::after {
+    top: 85px;
+}
+
+.menu-item .friend2::after {
+    content: 'name';
+}
+
+.menu-item .friend3::after {
+    content: 'name';
+}
+
+.menu-item .friend4::after {
+    content: 'name';
+}
+
+.menu-item .friend5::after {
+    content: 'college friends';
+}
+
+.menu-item .friend6::after {
+    content: 'name';
+}
+
+.friends img {
+    width: 80px;
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;
+}
+.menu-open {
+   display: none;
+}
+
+.lines {
+   width: 25px;
+   height: 3px;
+   background: #596778;
+   display: block;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -12.5px;
+   margin-top: -1.5px;
+   -webkit-transition: -webkit-transform 200ms;
+   transition: -webkit-transform 200ms;
+   transition: transform 200ms;
+   transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.line-1 {
+   -webkit-transform: translate3d(0, -8px, 0);
+   transform: translate3d(0, -8px, 0);
+}
+
+.line-2 {
+   -webkit-transform: translate3d(0, 0, 0);
+   transform: translate3d(0, 0, 0);
+}
+
+.line-3 {
+   -webkit-transform: translate3d(0, 8px, 0);
+   transform: translate3d(0, 8px, 0);
+}
+
+.menu-open:checked + .menu-open-button .line-1 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+   transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menu-open:checked + .menu-open-button .line-2 {
+   -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+   transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menu-open:checked + .menu-open-button .line-3 {
+   -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+   transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+.menu {
+   margin: auto;
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   width: 80px;
+   height: 80px;
+   text-align: center;
+   box-sizing: border-box;
+   font-size: 26px;
+}
+
+.menu-item:hover {
+   border: 2px solid #FFFFFF;
+}
+
+.menu-item:nth-child(3) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(4) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(5) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(6) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(7) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(8) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-item:nth-child(9) {
+   -webkit-transition-duration: 180ms;
+   transition-duration: 180ms;
+}
+
+.menu-open-button {
+   z-index: 2;
+   -webkit-transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+   -webkit-transition-duration: 400ms;
+   transition-duration: 400ms;
+   -webkit-transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+   transform: scale(1.1, 1.1) translate3d(0, 0, 0);
+   cursor: pointer;
+   box-shadow: 3px 3px 0 0 rgba(0, 0, 0, 0.14);
+}
+
+.menu-open-button:hover {
+   -webkit-transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+   transform: scale(1.2, 1.2) translate3d(0, 0, 0);
+}
+
+.menu-open:checked + .menu-open-button {
+   -webkit-transition-timing-function: linear;
+   transition-timing-function: linear;
+   -webkit-transition-duration: 200ms;
+   transition-duration: 200ms;
+   -webkit-transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+   transform: scale(0.8, 0.8) translate3d(0, 0, 0);
+}
+
+.menu-open:checked ~ .menu-item {
+   -webkit-transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+   transition-timing-function: cubic-bezier(0.935, 0, 0.34, 1.33);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(3) {
+   transition-duration: 180ms;
+   -webkit-transition-duration: 180ms;
+   -webkit-transform: translate3d(0.08361px, -104.99997px, 0);
+   transform: translate3d(0.08361px, -104.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(4) {
+   transition-duration: 280ms;
+   -webkit-transition-duration: 280ms;
+   -webkit-transform: translate3d(90.9466px, -52.47586px, 0);
+   transform: translate3d(90.9466px, -52.47586px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(5) {
+   transition-duration: 380ms;
+   -webkit-transition-duration: 380ms;
+   -webkit-transform: translate3d(90.9466px, 52.47586px, 0);
+   transform: translate3d(90.9466px, 52.47586px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(6) {
+   transition-duration: 480ms;
+   -webkit-transition-duration: 480ms;
+   -webkit-transform: translate3d(0.08361px, 104.99997px, 0);
+   transform: translate3d(0.08361px, 104.99997px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(7) {
+   transition-duration: 580ms;
+   -webkit-transition-duration: 580ms;
+   -webkit-transform: translate3d(-90.86291px, 52.62064px, 0);
+   transform: translate3d(-90.86291px, 52.62064px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(8) {
+   transition-duration: 680ms;
+   -webkit-transition-duration: 680ms;
+   -webkit-transform: translate3d(-91.03006px, -52.33095px, 0);
+   transform: translate3d(-91.03006px, -52.33095px, 0);
+}
+
+.menu-open:checked ~ .menu-item:nth-child(9) {
+   transition-duration: 780ms;
+   -webkit-transition-duration: 780ms;
+   -webkit-transform: translate3d(-0.25084px, -104.9997px, 0);
+   transform: translate3d(-0.25084px, -104.9997px, 0);
+}
+                    </pre>
+                </div>
+            </div>
+        </div>
+        <!-- about-section -->
+        <footer class="about-section">
+            <div class="row">
+                <div class="about-box">
+                    <h2 class="hero-text">about me</h2>
+                    <div class="about-me">
+                        <div class="img-box">
+                            <img src="../resources/img/my-logo.png" alt="coding ibrahim">
+                        </div>
+                        <div class="description-box">
+                            <h2>ibrahim</h2>
+                            <p class="little-text">Learn || Share || support</p>
+                        </div>
+                    </div>
+                    <div class="social-media-box">
+                        <ul>
+                            <li><a target="_blank" href="https://www.facebook.com/ibrahim094is"><i class="social-media-icon fa-brands fa-facebook-f"></i></a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/ibrahim094is/"><i class="social-media-icon fa-brands fa-instagram"></i></a></li>
+                            <li><a target="_blank" href="https://youtube.com/@Ibrahim_gd?si=XQezPgv5mYMYnYa0"><i class="social-media-icon fa-brands fa-youtube"></i></a></li>
+                            <li><a target="_blank" href="https://ibrahimis5684.github.io/Portfolio/"><i class="social-media-icon fa-solid fa-window-maximize"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="copyright">
+                        <p class="little-text">&copy; 2023.<a href="https://ibrahimis5684.github.io/Portfolio/">ibrahim&#10004;</a>.All rights reserved. v 2.0.2</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!--ja script-->
+    <script src="../resources/js/script.js"></script>
+    <script src="../vendors/js/html5shiv-printshiv.min.js"></script>
+</body>
+</html>
